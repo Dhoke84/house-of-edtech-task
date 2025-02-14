@@ -62,7 +62,7 @@ const Register = () => {
                         type="password"
                         value={data.password}
                         onChange={onValueChange}
-                        className="border border-gray-400 rounded-xl px-4 py-3 w-full focus:outline-none focus:ring-4 focus:ring-indigo-300"
+                        className="border border-gray-400 rounded-xl px-4 py-3 w-full focus:outline-none focus:ring-4 focus:ring-indigo-300  text-black placeholder-gray-500"
                     />
                     <button 
                         className="bg-gradient-to-r from-indigo-500 to-pink-500 hover:from-indigo-600 hover:to-pink-600 text-white font-bold py-3 px-8 rounded-xl w-full transition-transform transform hover:scale-105 shadow-lg"

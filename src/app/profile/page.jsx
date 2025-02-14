@@ -72,12 +72,12 @@ const Dashboard = () => {
     };
 
     const handleDelete = async (id) => {
-        if (!confirm("Are you sure you want to delete this contact?")) return;
+        if (!confirm("Are you sure you want to delete this user?")) return;
         try {
             await axios.delete("/api/contacts/crud", { data: { id } });
             await fetchContacts();
         } catch (error) {
-            console.error("Error deleting contact:", error);
+            console.error("Error deleting user:", error);
         }
     };
 
@@ -112,7 +112,7 @@ const Dashboard = () => {
                     <span className="text-blue-600 text-3xl">🎯</span>
                     <div>
                         <h1 className="text-blue-600 text-2xl font-bold">User Manager</h1>
-                        <p className="text-gray-900 text-sm font-bold">House of Edutech</p>
+                        <p className="text-gray-900 text-sm font-bold">House of Edtech</p>
                     </div>
                 </div>
 
