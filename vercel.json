@@ -1,0 +1,7 @@
+
+{
+  "version": 2,
+  "env": {
+"NEXT_PUBLIC_API_URL": "https://user-app-iota-two.vercel.app/"
+  }
+}
