@@ -5,10 +5,10 @@ import { NextResponse } from "next/server";
 
 export const POST = async (req) => {
     try {
-        // Ensure database connection
+       
         await Connection();
 
-        // Parse request body
+      
         const body = await req.json();
         console.log("Received body:", body);
 

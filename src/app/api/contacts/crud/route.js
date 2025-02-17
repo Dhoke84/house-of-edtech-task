@@ -7,7 +7,7 @@ Connection(); // Ensure Database Connection
 export async function handler(req) {
     try {
         if (req.method === "POST") {
-            // 🟢 Create a Contact
+            // Create a Contact
             const body = await req.json();
             const { name, contact, email, address } = body;
 
@@ -25,13 +25,13 @@ export async function handler(req) {
         } 
         
         else if (req.method === "GET") {
-            // 🟡 Get All Contacts
+            // Get All Contacts
             const contacts = await Contact.find();
             return NextResponse.json({ contacts }, { status: 200 });
         } 
         
         else if (req.method === "PUT") {
-            // 🟠 Update Contact
+            // Update Contact
             const body = await req.json();
             const { id, name, contact, email, address } = body;
 
@@ -56,7 +56,7 @@ export async function handler(req) {
         } 
         
         else if (req.method === "DELETE") {
-            // 🔴 Delete Contact
+            // Delete Contact
             const body = await req.json();
             const { id } = body;
 
@@ -73,7 +73,7 @@ export async function handler(req) {
         } 
         
         else {
-            // 🚫 Method Not Allowed
+            // Method Not Allowed
             return NextResponse.json({ error: "Method Not Allowed" }, { status: 405 });
         }
     } catch (error) {

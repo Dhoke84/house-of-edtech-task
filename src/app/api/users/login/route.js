@@ -26,7 +26,7 @@ export const POST = async (req) => {
         }
 
         const tokenData = {
-            email: user.email,  // Replaced username with email
+            email: user.email,  
             id: user._id
         };
 
